@@ -75,7 +75,8 @@ textarea {
   align-self: center;
 
   color: black;
-
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-right: 93px;
 
   font-family: Raleway;
@@ -95,7 +96,7 @@ textarea {
   align-items: center;
 }
 
-.site-nav {
+/* .site-nav {
   display: flex;
 
   padding: 0;
@@ -104,9 +105,9 @@ textarea {
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
-}
+} */
 
-.site-nav .link {
+/* .site-nav .link {
   display: block;
   text-decoration: none;
 
@@ -121,7 +122,7 @@ textarea {
   letter-spacing: 0.02em;
 
   transition: color 250ms var(--timing-function);
-}
+} */
 .site-nav .item {
   position: relative;
 }
@@ -195,9 +196,9 @@ textarea {
   margin-left: auto;
 }
 
-.address-nav .item:not(:last-child) {
+/* .address-nav .item:not(:last-child) {
   margin-right: 50px;
-}
+} */
 
 .nav-link {
   display: flex;

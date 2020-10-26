@@ -17,7 +17,7 @@ $letterSpacing: (
   "more": 0.03em,
   "most": 0.06em,
 );
-$transit: color 250ms var(--timing-function);
+$transit: all 250ms var(--timing-function);
 //
 html {
   box-sizing: border-box;
