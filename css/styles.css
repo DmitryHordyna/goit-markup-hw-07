@@ -79,7 +79,7 @@ textarea {
   margin-right: 93px;
 
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 31px;
 }
@@ -148,7 +148,7 @@ textarea {
   /* opacity: 1; */
   transform: scaleX(1);
 }
-.active {
+/* .active {
   display: block;
   text-decoration: none;
 
@@ -161,7 +161,7 @@ textarea {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
+} */
 .active::after {
   content: "";
 
@@ -456,7 +456,12 @@ textarea {
   height: 600px;
   text-align: center;
 
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img-2.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Img-2.jpg");
 
   background-repeat: no-repeat;
   background-position: center;
@@ -663,7 +668,8 @@ textarea {
 .shadow {
   background: #ffffff;
   /* material shadow v1 */
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .feature-list > .item:not(:last-child) {
@@ -829,7 +835,8 @@ textarea {
   background-color: var(--primary-bg-color);
 
   border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .modal-icon {
@@ -1103,7 +1110,8 @@ textarea {
   font-size: 16px;
   line-height: 1.6;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-secondary:hover,
 .button-secondary:focus {
@@ -1153,8 +1161,8 @@ textarea {
   margin-bottom: 30px;
 
   outline: 1px solid #ececec;
-  transition: box-shadow 250ms var(--timing-function), border 250ms var(--timing-function),
-    background 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function),
+    border 250ms var(--timing-function), background 250ms var(--timing-function);
 }
 .item-block:nth-child(3n) {
   margin-right: 0;
@@ -1214,7 +1222,8 @@ textarea {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* Позиціювання карточки*/

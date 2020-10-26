@@ -1,0 +1,33 @@
+.header {
+  border: 1px solid map-get($colors, "topcolor");
+}
+.site-nav {
+  @include enteredFlex;
+}
+.site-nav-item .link {
+  // display: block;
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
+  text-decoration: none;
+  color: map-get($colors, "primary");
+  font-weight: map-get($fontWeight, "medial");
+  letter-spacing: map-get($letterSpacing, "small");
+  font-size: 14px;
+  line-height: 1.14;
+
+  transition: $transit;
+}
+
+.fon-address .link {
+  //       display: flex;
+  //   align-items: center;
+
+  color: map-get($colors, "secondary");
+
+  font-weight: map-get($fontWeight, "medial");
+  letter-spacing: map-get($letterSpacing, "small");
+  font-size: 14px;
+  line-height: 1.14;
+
+  transition: $transit;
+}

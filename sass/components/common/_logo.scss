@@ -1,0 +1,18 @@
+// $colorPrimery: #212121;
+// $colorAccent: #2196f3;
+// $colorSecondary: #757575;
+// $colorBackcolor: #f5f4fa;
+// $colorTopcolor: #e5e5e5;
+
+.logo {
+  text-decoration: none;
+  color: map-get($colors, "accent");
+
+  font-family: "Raleway";
+  font-weight: map-get($fontWeight, "bold");
+  font-size: 26px;
+  line-height: 1.19;
+  span {
+    color: map-get($colors, "primary");
+  }
+}

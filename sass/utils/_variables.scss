@@ -1,0 +1,60 @@
+$colors: (
+  "primary": #212121,
+  "accent": #2196f3,
+  "secondary": #757575,
+  "backcolor": #f5f4fa,
+  "topcolor": #e5e5e5,
+  "white": #ffffff,
+);
+$fontWeight: (
+  "normal": 400,
+  "medial": 500,
+  "bold": 700,
+  "big": 900,
+);
+$letterSpacing: (
+  "small": 0.02em,
+  "more": 0.03em,
+  "most": 0.06em,
+);
+$transit: color 250ms var(--timing-function);
+//
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  color: var(--color-nav-email);
+
+  font-family: "Roboto", sans-serif;
+
+  letter-spacing: map-get($letterSpacing, "more");
+}
+ul {
+  list-style: none;
+}
+button {
+  font-family: inherit;
+}
+textarea {
+  resize: none;
+}
+.container {
+  width: 1230px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.list {
+  margin: 0;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+}
