@@ -69,7 +69,7 @@ textarea {
   background-color: var(--primary-bg-color);
   outline: 1px solid #ececec;
 }
-/* LOGO */
+/* LOGO
 .logo {
   text-decoration: none;
   align-self: center;
@@ -91,13 +91,12 @@ textarea {
   color: #2196f3;
 }
 /* main nav */
-.main-nav {
+/* .main-nav {
   display: flex;
-  align-items: center;
-}
+  align-items: center; */
 
 /* .site-nav {
-  display: flex;
+  display: flex;  //   
 
   padding: 0;
   margin: 0;
@@ -126,7 +125,7 @@ textarea {
 .site-nav .item {
   position: relative;
 }
-
+/* 
 .current::after {
   content: "";
 
@@ -142,13 +141,12 @@ textarea {
   border-radius: 2px;
 
   /* opacity: 0; */
-  transform: scaleX(0);
+/* transform: scaleX(0);
   transition: transform 250ms var(--timing-function);
 }
 .current:hover::after {
   /* opacity: 1; */
-  transform: scaleX(1);
-}
+/* transform: scaleX(1); */
 /* .active {
   display: block;
   text-decoration: none;
@@ -163,7 +161,7 @@ textarea {
   line-height: 1.14;
   letter-spacing: 0.02em;
 } */
-.active::after {
+/* .active::after {
   content: "";
 
   position: absolute;
@@ -194,13 +192,13 @@ textarea {
 .address-nav {
   display: flex;
   margin-left: auto;
-}
+} */
 
 /* .address-nav .item:not(:last-child) {
   margin-right: 50px;
 } */
 
-.nav-link {
+/* .nav-link {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -213,9 +211,9 @@ textarea {
   letter-spacing: 0.02em;
 
   transition: color 250ms var(--timing-function);
-}
+} */
 
-.fon-address:hover a,
+/* .fon-address:hover a,
 .fon-address:focus a {
   color: var(--accent-color);
 }
@@ -227,7 +225,8 @@ textarea {
   margin-right: 10px;
   fill: var(--color-nav-email);
   transition: all 250ms var(--timing-function);
-}
+} */
+*/
 
 /* Basement page!
 (Підвал сторінки)*/
@@ -338,7 +337,7 @@ textarea {
 /* button
 (кнопка) */
 
-.button-primary {
+/* .button-primary {
   text-decoration: none;
 
   color: var(--primary-bg-color);
@@ -353,7 +352,7 @@ textarea {
 .button-primary:focus {
   color: var(--primary-bg-color);
   background-color: #188ce8;
-}
+} */
 
 .title-subscribe {
   margin: 0;
@@ -452,7 +451,7 @@ textarea {
 (стилі індівідуально контенту)*/
 /* groupe hero */
 
-.hero {
+/* .hero {
   max-width: 1600px;
   height: 600px;
   text-align: center;
@@ -474,12 +473,12 @@ textarea {
   margin-left: auto;
 
   /* outline: 1px solid black; */
-  letter-spacing: 0.06em;
-}
+/* letter-spacing: 0.06em;
+} */
 
-.hero-title {
+/* .hero-title {
   /* background-color: tomato; */
-  color: var(--primary-bg-color);
+/* color: var(--primary-bg-color);
 
   margin-top: 0;
   margin-bottom: 40px;
@@ -488,32 +487,32 @@ textarea {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-}
+} */
 
 /* section */
 
-.section {
+/* .section {
   padding-bottom: 94px;
   padding-top: 94px;
   /* margin-bottom: 94px;
   margin-top: 94px; */
-}
+/* }
 .section-title-no {
   display: none;
-}
+} */
 
 .galery {
   padding-bottom: 94px;
   padding-top: 0;
 }
 
-.section-list {
+/* .section-list {
   display: flex;
   justify-content: center;
   /* flex-wrap: wrap; */
-  padding: 0;
+/* padding: 0;
   margin: 0;
-}
+} */
 
 .section-list > .item:not(:last-child) {
   margin-right: 30px;

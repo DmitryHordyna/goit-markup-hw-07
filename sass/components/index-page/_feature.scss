@@ -1,0 +1,37 @@
+.feature-title {
+  display: none;
+}
+.feature-list {
+  @extend %flexcardset;
+  & .item {
+    margin-left: 30px;
+    margin-top: 30px;
+
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+.feature-item-title {
+  color: map-get($colors, "primary");
+  font-weight: map-get($fontWeight, "bold");
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.feature-text {
+  margin-top: 10px;
+
+  color: map-get($colors, "secondary");
+  font-weight: map-get($fontWeight, "normal");
+  font-size: 14px;
+  line-height: 1.71;
+}
+.feature-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-image: url();
+  //   background-color: map-get($colors, "backcolor");
+  @extend %backgroundIcon;
+  border-radius: 4px;
+}

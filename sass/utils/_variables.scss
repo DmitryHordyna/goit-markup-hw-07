@@ -4,7 +4,8 @@ $colors: (
   "secondary": #757575,
   "backcolor": #f5f4fa,
   "topcolor": #e5e5e5,
-  "white": #ffffff,
+  "title": #ffffff,
+  "btn-focus": #188ce8,
 );
 $fontWeight: (
   "normal": 400,
@@ -17,8 +18,7 @@ $letterSpacing: (
   "more": 0.03em,
   "most": 0.06em,
 );
-$transit: all 250ms var(--timing-function);
-//
+//all style
 html {
   box-sizing: border-box;
 }
@@ -43,6 +43,8 @@ button {
 textarea {
   resize: none;
 }
+
+// all-class-stale
 .container {
   width: 1230px;
 
@@ -51,10 +53,29 @@ textarea {
   padding-left: 15px;
   padding-right: 15px;
 }
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.title {
+  margin: 0;
+  padding: 0;
+}
 .list {
   margin: 0;
   padding: 0;
 }
 .link {
   text-decoration: none;
+}
+.text {
+  margin: 0;
+  padding: 0;
+}
+.button {
+  color: map-get($colors, "title");
+  background-color: map-get($colors, "accent");
+  border: 4px solid transparent;
+  border-radius: 4px;
+  @extend %transition;
 }
