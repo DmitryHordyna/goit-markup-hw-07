@@ -54,12 +54,12 @@
     }
   }
 }
-
 .team-link-icon {
-  fill: map-get($colors, "secondary");
+  fill: map-get($colors, "icon");
   @extend %transition;
   &:hover,
   :focus {
+    @extend %transition;
     fill: map-get($colors, "title");
   }
 }
