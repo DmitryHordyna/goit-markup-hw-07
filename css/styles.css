@@ -501,10 +501,10 @@ textarea {
   display: none;
 } */
 
-.galery {
+/* .galery {
   padding-bottom: 94px;
   padding-top: 0;
-}
+} */
 
 /* .section-list {
   display: flex;
@@ -517,21 +517,21 @@ textarea {
 .section-list > .item:not(:last-child) {
   margin-right: 30px;
 }
-.vector::before {
+/* .vector::before {
   content: "";
   display: block;
   height: 120px;
   margin-bottom: 30px;
 
   /* background-size: contain; */
-  background-repeat: no-repeat;
+/* background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
 
-  border-radius: 4px;
-  /* outline: 1px solid grey; */
-}
-.icon-spytnik::before {
+  border-radius: 4px; */
+/* outline: 1px solid grey; */
+
+/* .icon-spytnik::before {
   background-image: url("../images/svg/antenna1.svg");
 }
 .icon-cloc::before {
@@ -542,7 +542,7 @@ textarea {
 }
 .icon-space::before {
   background-image: url("../images/svg/astronaut1.svg");
-}
+} */
 .section-list .title,
 .work-list .title {
   text-transform: uppercase;

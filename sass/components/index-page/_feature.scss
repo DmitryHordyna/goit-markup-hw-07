@@ -5,7 +5,6 @@
   @extend %flexcardset;
   & .item {
     margin-left: 30px;
-    margin-top: 30px;
 
     flex-basis: calc(100% / 4 - 30px);
   }
@@ -25,13 +24,27 @@
   font-size: 14px;
   line-height: 1.71;
 }
+
 .feature-item::before {
   content: "";
   display: block;
   height: 120px;
   margin-bottom: 30px;
-  background-image: url();
-  //   background-color: map-get($colors, "backcolor");
+  //   background-image: url("../images/svg/antenna1.svg");
+  background-color: map-get($colors, "backcolor");
   @extend %backgroundIcon;
   border-radius: 4px;
+}
+
+.icon-spytnik::before {
+  background-image: url("../images/svg/antenna1.svg");
+}
+.icon-cloc::before {
+  background-image: url("../images/svg/clock1.svg");
+}
+.icon-tv::before {
+  background-image: url("../images/svg/diagram1.svg");
+}
+.icon-space::before {
+  background-image: url("../images/svg/astronaut1.svg");
 }
