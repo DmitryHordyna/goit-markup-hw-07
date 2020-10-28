@@ -12,3 +12,10 @@
     color: map-get($colors, "primary");
   }
 }
+.footer-logo {
+  color: map-get($colors, "title");
+
+  & span {
+    color: map-get($colors, "accent");
+  }
+}

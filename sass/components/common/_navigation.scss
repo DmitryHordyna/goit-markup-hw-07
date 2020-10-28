@@ -65,8 +65,10 @@
     transform: scaleX(1);
   }
 }
-.address-link {
+.address-nav-list .address-link {
   @extend %flexboxcentre;
+}
+.address-link {
   color: map-get($colors, "secondary");
 
   font-weight: map-get($fontWeight, "medial");

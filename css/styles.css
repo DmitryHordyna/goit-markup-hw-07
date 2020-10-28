@@ -65,10 +65,10 @@ textarea {
 
 /* Style nav 
 (стилі навігації)*/
-.header {
+/* .header {
   background-color: var(--primary-bg-color);
   outline: 1px solid #ececec;
-}
+} */
 /* LOGO
 .logo {
   text-decoration: none;
@@ -122,9 +122,9 @@ textarea {
 
   transition: color 250ms var(--timing-function);
 } */
-.site-nav .item {
+/* .site-nav .item {
   position: relative;
-}
+} */
 /* 
 .current::after {
   content: "";

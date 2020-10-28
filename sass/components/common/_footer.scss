@@ -1,0 +1,134 @@
+.footer {
+  display: flex;
+  background-color: map-get($colors, "footer");
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  & .link:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.place {
+  margin-top: 20px;
+  color: map-get($colors, "title");
+  &:hover,
+  :focus {
+    color: map-get($colors, "accent");
+  }
+}
+.title-footer {
+  color: map-get($colors, "title");
+
+  font-weight: map-get($fontWeight, "bold");
+  font-size: 14px;
+  line-height: 1.14;
+}
+.conteiner-social {
+  margin-left: 70px;
+  margin-top: 12px;
+  margin-right: 93px;
+}
+.social-list {
+  display: flex;
+  margin-top: 20px;
+
+  & .social-icon {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    @extend %backgroundIcon;
+    @extend %transition;
+
+    &:hover,
+    :focus {
+      background-color: map-get($colors, "accent");
+    }
+  }
+}
+
+.icon1 {
+  background-image: url("../images/svg/instagram2.svg");
+}
+.icon2 {
+  background-image: url("../images/svg/twitter2.svg");
+}
+.icon3 {
+  background-image: url("../images/svg/facebook2.svg");
+}
+.icon4 {
+  background-image: url("../images/svg/linkedin2.svg");
+}
+.social-list .item:not(:last-child) {
+  margin-right: 10px;
+}
+.container-subscribe {
+  display: flex;
+  align-items: center;
+}
+.subscribe-title {
+  margin-top: 12px;
+  margin-bottom: 20px;
+
+  color: map-get($colors, "title");
+  font-weight: map-get($fontWeight, "bold");
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.subscrime-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+  border-radius: 4px;
+  &:focus {
+    border: 1px solid map-get($colors, "accent");
+  }
+}
+
+.btn-subscribe {
+  display: flex;
+  margin-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+
+  color: map-get($colors, "title");
+  letter-spacing: map-get($letterSpacing, "most");
+  font-weight: map-get($fontWeight, "bolt");
+  font-size: 16px;
+  line-height: 1.86;
+  background-color: map-get($colors, "accent");
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid map-get($colors, "accent");
+  @extend %transition;
+  &:hover,
+  :focus {
+    background-color: map-get($colors, "btn-focus");
+  }
+}
+.btn-subscribe::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  margin-right: 28px;
+  background-image: url("../images/svg/iconsend.svg");
+  @extend %backgroundIcon;
+}

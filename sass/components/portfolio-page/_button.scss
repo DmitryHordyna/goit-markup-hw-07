@@ -1,0 +1,29 @@
+.change {
+  padding-top: 94px;
+  // padding-bottom: 50px;
+  & .change-title {
+    display: none;
+  }
+}
+.change-list {
+  @extend %flexboxcentre;
+  & .item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+.button-secondary {
+  padding: 6px 22px;
+
+  color: map-get($colors, "primary");
+  background-color: map-get($colors, "topcolor");
+
+  font-weight: map-get($fontWeight, "medial");
+  font-size: 16px;
+  line-height: 1.6;
+  @extend %transition;
+  &:hover,
+  :focus {
+    color: map-get($colors, "title");
+    background-color: map-get($colors, "accent");
+  }
+}

@@ -28,6 +28,13 @@ textarea {
   resize: none;
 }
 
+::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+
 .container {
   width: 1230px;
   margin-left: auto;
@@ -53,6 +60,7 @@ textarea {
 
 .link {
   text-decoration: none;
+  font-style: normal;
 }
 
 .text {
@@ -76,7 +84,7 @@ textarea {
   line-height: 1.16;
 }
 
-.main-nav, .address-link, .client-item {
+.main-nav, .address-nav-list .address-link, .client-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,14 +105,14 @@ textarea {
   margin-left: -30px;
 }
 
-.hero, .feature-item::before, .form-input:checked + .span-icon {
+.social-list .social-icon, .btn-subscribe::after, .hero, .feature-item::before, .form-input:checked + .span-icon {
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.button, .link-site, .link-site::after, .address-link, .address-link svg, .team-icon .team-item-icon, .team-link-icon, .team-link-icon:hover,
+.button, .link-site, .link-site::after, .address-link, .address-link svg, .social-list .social-icon, .btn-subscribe, .team-icon .team-item-icon, .team-link-icon, .team-link-icon:hover,
 .team-link-icon :focus, .client-item, .client-item:hover,
-.client-item :focus, .company, .btn-close, .form-chek label, .icon-form, .submit {
+.client-item :focus, .company, .btn-close, .form-chek label, .form-icon, .submit {
   -webkit-transition: all 1250ms cubic-bezier(0.4, 0, 0.2, 1) 500ms;
   transition: all 1250ms cubic-bezier(0.4, 0, 0.2, 1) 500ms;
 }
@@ -121,6 +129,14 @@ textarea {
 
 .logo span {
   color: #212121;
+}
+
+.footer-logo {
+  color: #ffffff;
+}
+
+.footer-logo span {
+  color: #2196f3;
 }
 
 .header {
@@ -218,6 +234,164 @@ textarea {
 
 .send-icon {
   margin-right: 10px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-list .link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.place {
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.place:hover,
+.place :focus {
+  color: #2196f3;
+}
+
+.title-footer {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.conteiner-social {
+  margin-left: 70px;
+  margin-top: 12px;
+  margin-right: 93px;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-list .social-icon {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.social-list .social-icon:hover,
+.social-list .social-icon :focus {
+  background-color: #2196f3;
+}
+
+.icon1 {
+  background-image: url("../images/svg/instagram2.svg");
+}
+
+.icon2 {
+  background-image: url("../images/svg/twitter2.svg");
+}
+
+.icon3 {
+  background-image: url("../images/svg/facebook2.svg");
+}
+
+.icon4 {
+  background-image: url("../images/svg/linkedin2.svg");
+}
+
+.social-list .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.container-subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe-title {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.subscrime-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.subscrime-input:focus {
+  border: 1px solid #2196f3;
+}
+
+.btn-subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  color: #ffffff;
+  letter-spacing: 0.06em;
+  font-size: 16px;
+  line-height: 1.86;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid #2196f3;
+}
+
+.btn-subscribe:hover,
+.btn-subscribe :focus {
+  background-color: #188ce8;
+}
+
+.btn-subscribe::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  margin-right: 28px;
+  background-image: url("../images/svg/iconsend.svg");
 }
 
 .hero {
@@ -635,7 +809,7 @@ textarea {
   border: 1px solid #2196f3;
 }
 
-.icon-form {
+.form-icon {
   position: absolute;
   top: 38px;
   left: 15px;
@@ -676,5 +850,163 @@ submit:focus,
 
 .span-check-text:focus {
   color: #757575;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-list .link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.place {
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.place:hover,
+.place :focus {
+  color: #2196f3;
+}
+
+.title-footer {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.conteiner-social {
+  margin-left: 70px;
+  margin-top: 12px;
+  margin-right: 93px;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-list .social-icon {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.social-list .social-icon:hover,
+.social-list .social-icon :focus {
+  background-color: #2196f3;
+}
+
+.icon1 {
+  background-image: url("../images/svg/instagram2.svg");
+}
+
+.icon2 {
+  background-image: url("../images/svg/twitter2.svg");
+}
+
+.icon3 {
+  background-image: url("../images/svg/facebook2.svg");
+}
+
+.icon4 {
+  background-image: url("../images/svg/linkedin2.svg");
+}
+
+.social-list .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.container-subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe-title {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.subscrime-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.subscrime-input:focus {
+  border: 1px solid #2196f3;
+}
+
+.btn-subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  color: #ffffff;
+  letter-spacing: 0.06em;
+  font-size: 16px;
+  line-height: 1.86;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid #2196f3;
+}
+
+.btn-subscribe:hover,
+.btn-subscribe :focus {
+  background-color: #188ce8;
+}
+
+.btn-subscribe::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  margin-right: 28px;
+  background-image: url("../images/svg/iconsend.svg");
 }
 /*# sourceMappingURL=main.css.map */
