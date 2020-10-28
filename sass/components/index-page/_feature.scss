@@ -30,10 +30,10 @@
   display: block;
   height: 120px;
   margin-bottom: 30px;
-  //   background-image: url("../images/svg/antenna1.svg");
+  border-radius: 4px;
+
   background-color: map-get($colors, "backcolor");
   @extend %backgroundIcon;
-  border-radius: 4px;
 }
 
 .icon-spytnik::before {
