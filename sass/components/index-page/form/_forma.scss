@@ -117,7 +117,7 @@
   fill: map-get($colors, "primary");
   @extend %transition;
 }
-.form-input:focus ~ .icon-form {
+.form-input:focus ~ .form-icon {
   fill: map-get($colors, "accent");
 }
 
