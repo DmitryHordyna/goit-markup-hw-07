@@ -123,8 +123,7 @@
   fill: map-get($colors, "accent");
 }
 
-.submit {
-  font-family: "Roboto";
+.btn-submit {
   font-weight: map-get($fontWeight, "bold");
   font-size: 16px;
   line-height: 1.87;
@@ -136,12 +135,9 @@
 
   cursor: pointer;
   @extend %transition;
-  background-color: map-get($colors, "accent");
-  color: map-get($colors, "title");
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: 1px solid transparent;
 }
 submit:focus,
 .submit:hover {
