@@ -95,6 +95,7 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: transparent;
   border-radius: 4px;
+  cursor: pointer;
   &:focus {
     border: 1px solid map-get($colors, "accent");
   }
@@ -117,6 +118,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px solid map-get($colors, "accent");
+  cursor: pointer;
   @extend %transition;
   &:hover,
   :focus {

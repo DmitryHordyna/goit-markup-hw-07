@@ -88,6 +88,7 @@ textarea {
   border: 4px solid transparent;
   border-radius: 4px;
   @extend %transition;
+  cursor: pointer;
 }
 .section-title {
   text-align: center;

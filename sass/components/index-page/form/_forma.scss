@@ -28,6 +28,7 @@
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  cursor: pointer;
 
   -webkit-appearance: none;
   appearance: none;
@@ -57,6 +58,7 @@
     font-size: 14px;
     line-height: 1.71;
 
+    cursor: pointer;
     @extend %transition;
     color: map-get($colors, "secondary");
   }
@@ -132,6 +134,7 @@
   margin-bottom: 40px;
   padding: 10px 55px;
 
+  cursor: pointer;
   @extend %transition;
   background-color: map-get($colors, "accent");
   color: map-get($colors, "title");
@@ -145,6 +148,7 @@ submit:focus,
   background-color: map-get($colors, "btn-focus");
 }
 .span-check {
+  margin-left: 5px;
   color: map-get($colors, "accent");
   text-decoration: underline;
 }
