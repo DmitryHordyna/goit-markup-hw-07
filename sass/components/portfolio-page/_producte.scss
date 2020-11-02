@@ -23,38 +23,42 @@
   &:nth-last-child(-n + 3) {
     margin-bottom: 0;
   }
+
+  & .title {
+    color: map-get($colors, "primary");
+
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 4px;
+
+    letter-spacing: map-get($letterSpacing, "most");
+    font-weight: map-get($fontWeight, "bold");
+    font-size: 18px;
+    line-height: 2;
+  }
+
+  & .text {
+    padding-left: 24px;
+    padding-bottom: 20px;
+
+    font-weight: map-get($fontWeight, "normal");
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: map-get($letterSpacing, "more");
+
+    color: #757575;
+  }
+
+  & .lorem {
+    padding-right: 24px;
+    padding-left: 24px;
+
+    color: map-get($colors, "title");
+    font-size: 18px;
+    line-height: 1.55;
+  }
 }
-.show .title {
-  color: map-get($colors, "primary");
 
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-bottom: 4px;
-
-  letter-spacing: map-get($letterSpacing, "most");
-  font-weight: map-get($fontWeight, "bold");
-  font-size: 18px;
-  line-height: 2;
-}
-.show .text {
-  padding-left: 24px;
-  padding-bottom: 20px;
-
-  font-weight: map-get($fontWeight, "normal");
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: map-get($letterSpacing, "more");
-
-  color: #757575;
-}
-.show .lorem {
-  padding-right: 24px;
-  padding-left: 24px;
-
-  color: map-get($colors, "title");
-  font-size: 18px;
-  line-height: 1.55;
-}
 .shadow-block {
   position: relative;
   display: flex;
@@ -66,19 +70,20 @@
     /* opacity: 1; */
     transform: translateY(0);
   }
-}
-.text-shadow {
-  position: absolute;
 
-  padding-top: 50px;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(33, 150, 243, 0.9);
-  /* opacity: 0; */
-  transform: translateY(100%);
-  @extend %transition;
+  & .text-shadow {
+    position: absolute;
+
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    /* opacity: 0; */
+    transform: translateY(100%);
+    @extend %transition;
+  }
 }
 .shadow-portfolio:hover,
 .shadow-portfolio:focus {
